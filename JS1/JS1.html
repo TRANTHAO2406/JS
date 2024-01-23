@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS1</title>
+</head>
+<body>
+<button type="button" onclick="showMessage();"> Click me!</button>
+
+<button type="button" onclick="kich_di();"> Nhấn zô!</button>
+
+<div id="messageDiv"></div>
+<button type="button" onclick="nhap_zo();">Nhấp zô đi</button>
+
+<button type="button" onclick="nhapvao();">Ấn vào</button>
+
+<button type="button" onclick="tutu()">Méo</button>
+<!--có cần phải chấm phẩy ở sau không-->
+<script>
+    function showMessage() {
+        alert("xin chào!");
+    }
+    function kich_di() {
+        alert("huân buồi đâu?");
+    }
+    function nhap_zo(){
+        document.getElementById('messageDiv').innerHTML = 'Helu!';
+    }
+    function nhapvao(){
+        document.write('helo');
+    }
+    function tutu() {
+        console.log('henho')
+    }
+    //có cần chấm phẩy ở sau không?//
+</script>
+</body>
+</html>

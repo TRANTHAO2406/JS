@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dientichhinhtron</title>
+    <style>
+        p {
+            color: #d61b06;
+            font-weight: bold;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+<h2>Diện tích hình tròn</h2>
+<input type="text" placeholder="Nhập bán kính zô bạn êi" id="r" name="bán kính">
+<button type="button" onclick="tinh()"> Nhấp để tính </button>
+<p id="s">Diện tích hình tròn là:</p> <br>
+<p id="c">Chu vi hình tròn là:</p>
+</body>
+<script>
+    function tinh(){
+    let r= parseFloat(document.getElementById("r").value)
+    let S= 3.14*(r*r)
+    document.getElementById("s").innerHTML = "Diện tích hình tròn là:" + S
+        let c= 3.14*(2*r)
+        document.getElementById("c").innerHTML = "Chu vi hình tròn là:" + c
+    }
+    /* + "+" nhận giá trị dương
+       + parseInt nhận giá trị số nguyên
+       + parseFloat nhận giá trị số nguyên và số thập phân
+     */
+</script>
+</html>

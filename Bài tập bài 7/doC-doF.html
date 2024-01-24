@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do</title>
+</head>
+<input type="number" placeholder="Độ C" id="c" name="nhietdo">
+<button type="button" onclick="chuyen()" name="chuyen">Chuyển</button>
+<p id="1">Kết quả</p>
+<body>
+<script>
+  //  C/5 = (F-32)/9 //
+function chuyen(){
+let doC = +document.getElementById("c").value
+let doF = ((9*doC/5)+32)
+  document.getElementById('1').innerHTML = "Kết quả" + doF
+}
+</script>
+</body>
+</html>

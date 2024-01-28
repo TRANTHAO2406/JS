@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="number" id="cd" name="chiều dài hv"></label>
+<button type="button" onclick="tinh()" name="tinh">Tính</button>
+<p id="kq"> Kết quả </p>
+<p id="kq2">Chiều dài cạnh là</p>
+
+<label><input type="number" id="caub1" placeholder="Số a" name="nhập số a bất kì"></label>
+<label><input type="number" id="caub2" placeholder="Số b" name="nhập số b bất kì"></label>
+<button type="button" onclick="tinhb()" name="tinhb">Tính b</button>
+<p id="c4b1"> Kết quả 1 </p>
+<p id="c4b2"> và </p>
+</body>
+<script>
+    //câu 1: câu lệnh để hiển thị 1 hộp thoại là: alert ()
+    alert('Trần Thảo')
+    // câu 2: câu lệnh để nhận giá trị từ 1 hộp thoại: prompt ()
+   let so = parseFloat(prompt('nhập 1 số bất kỳ'))
+    let bp = so*so
+    alert("bình phương là: " +bp)
+    /* câu 3:
+    b1: Ở thẻ body, thêm 2 thẻ input và 1 th h1
+    b2: Điền type number; gán id và điền name vào 2 ô input
+    b3: Điền id và giá trị thẻ h1
+    b4: Ở thẻ script, dùng function
+    b5: Đặt tên biến a và lấy giá trị từ ô input 1 bằng hàm document.getElementId(id của input 1).value; tương t với biến b
+    b6: Đặt tên biến S=a*b
+    b7: Dùng hàm document.getElementID("ID của thẻ h1").innerHTML = "+S"
+     */
+    // câu 4:
+    function tinh() {
+         a= +document.getElementById("cd").value
+     let cvhv=a*4
+    document.getElementById("kq").innerHTML = "diện tích" +cvhv
+        document.getElementById("kq2").innerHTML = "chiều dài cạnh là" +a
+    }
+function tinhb() {
+        acaub= parseFloat(document.getElementById("caub1").value)
+        bcaub= parseFloat(document.getElementById("caub2").value)
+    let mu1= Math.pow(acaub, 2)
+    let mu2= Math.pow(acaub, bcaub)
+    document.getElementById("c4b1").innerHTML = "Kết quả là" +mu1
+    document.getElementById("c4b2").innerHTML = "và" +mu2
+}
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+</body>
+<script>
+let i
+let text =""
+    for (i=0;i<5;i=i+1) {
+
+        text += "The number is " +i +"<br>";
+    }
+document.getElementById("demo").innerHTML = text;
+
+    let num = +prompt("nhập số bất kì vào:");
+    let total = 0
+    let x=1
+for (;x<=num;x=x+1) {
+    total= total+x
+}
+alert(total)
+</script>
+</html>

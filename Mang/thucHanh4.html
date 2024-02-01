@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thucHanh4</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    let x = [70, -3, 5, 1, 2, 10];
+    let max = x[0];      //Khai báo biến max để lưu giá trị lớn nhất mặc định là phần tử đầu tiên trong mảng//
+    let index = 0;       //Khai báo biến index mặc định gán giá trị 0 để lưu chỉ số của phần tử lớn nhất trong mảng//
+for (let i = 1; i < x.length; i++) {                //chay tu i=1 cung duoc vi da gan max = x[0]
+    if (x[i] > max) {
+        max = x[i];
+        index = i;
+    }
+}
+document.write("phan tu lon nhat la: " + max + " o vi tri thu " + index)
+</script>
+</html>

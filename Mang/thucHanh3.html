@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thucHanh3</title>
+</head>
+<body>
+
+</body>
+<script>
+    let x = [-3, 5, 1, 3, 2, 10];
+    let first = 0;                      // bien first de duyet nhung phan tu dau tien trong mang//
+    let last = x.length - 1;            // bien last de duyet nhung phan tu cuoi cung trong mang //
+    while (first < last) {
+        let b = x[first];               //khai bao bien de doi cho phan tu dau tien va phan tu cuoi cung//
+        x[first] = x[last];
+        x[last] = b;
+        first++;                        // tang first va giam last de duyet nhung phan tu tiep theo
+        last--;
+    }
+    document.write(x);
+</script>
+</html>

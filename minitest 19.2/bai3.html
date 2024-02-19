@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+
+</body>
+<script>
+    let lenght = +prompt('nhap vao do dai cua mang muon tao');
+    let arr = Array();
+    for (let i = 0; i < lenght; i++) {
+        arr[i] = +prompt('nhap vao phan tu cua mang');
+    }
+    document.write('mang vua moi nhap vao la ' + arr);
+
+   let number = lenght
+    function soNguyenTo(number) {
+        if (number <= 1) {
+            return false;
+        }
+        for (let i = 2; i < number; i++) {
+            if (number % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    function sum(number) {
+        let tongSoNguyenTo = 0;
+        for (let i = 2; i < a; i++) {
+            if (soNguyenTo(i)) {
+                tongSoNguyenTo = tongSoNguyenTo + i;
+            }
+        }
+        return tongSoNguyenTo;
+    }
+    document.write('tong cac so nguyen to trong mang la ' + sum(number))
+</script>
+</html>

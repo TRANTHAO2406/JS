@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai4</title>
+</head>
+<body>
+
+</body>
+<script>
+    // Hàm kiểm tra số nguyên tố
+    function soNguyenTo(number) {
+        if (number <= 1) {
+            return false;
+        }
+        for (let i = 2; i < number; i++) {
+            if (number % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function sum(a) {
+        let tongSoNguyenTo = 0;
+        for (let i = 2; i < a; i++) {
+            if (soNguyenTo(i)) {
+                tongSoNguyenTo = tongSoNguyenTo + i;
+            }
+        }
+        return tongSoNguyenTo;
+    }
+    document.write('tong cac so nguyen to nho hon 500 la ' + sum(500))
+
+</script>
+</html>
